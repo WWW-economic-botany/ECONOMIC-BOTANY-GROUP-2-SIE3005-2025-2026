@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practical 1 – Seaweed & Mushroom Products</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #f5f9fc;
+            color: #2c3e50;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 30px auto 40px auto;
+            padding: 0 16px 40px 16px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0d7a7a;
+            margin-bottom: 6px;
+        }
+        .subtitle {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            margin-top: 30px;
+            border-left: 6px solid #1a7a7a;
+            padding-left: 12px;
+            color: #0d7a7a;
+        }
+
+        .lab-card {
+            background: white;
+            border-radius: 12px;
+            padding: 18px 18px 16px 18px;
+            margin-bottom: 18px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+        }
+        .lab-meta {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #999;
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+        .lab-card h3 {
+            margin: 0 0 8px 0;
+            color: #0d7a7a;
+        }
+        .lab-card img {
+            max-width: 180px;
+            border-radius: 8px;
+            margin: 6px 0 10px 0;
+            display: block;
+        }
+        .lab-card p {
+            margin: 2px 0;
+            font-size: 0.93rem;
+        }
+        .lab-card ul {
+            margin: 6px 0 0 18px;
+            padding-left: 0;
+            font-size: 0.9rem;
+        }
+        .lab-card li {
+            margin-bottom: 4px;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #0d7a7a, #1ba89a);
+            color: white;
+            padding: 15px 10%;
+            text-align: center;
+            font-size: 0.85rem;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<nav style="
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background:#ffffff;
+  border-bottom:2px solid #1a7a7a;
+  padding:8px 10%;
+  margin-bottom:15px;
+">
+  <button
+    onclick="location.href='homepage.html'"
+    style="
+      padding:8px 14px;
+      border-radius:16px;
+      border:1px solid #1a7a7a;
+      background:#e8f5f0;
+      color:#0d7a7a;
+      font-family:'Segoe UI',sans-serif;
+      font-size:0.9rem;
+      cursor:pointer;
+    "
+  >
+    ⬅ Back to Home
+  </button>
+</nav>
+
+<main>
+  <section>
+    <h1>Practical 1: Seaweed & Mushroom Products</h1>
+    <div class="subtitle">
+        Commercial seaweed snacks and edible fungi – ingredients, producers and key benefits.
+    </div>
+
+    <section>
+      <h2>🪸 Seaweed Products</h2>
+      <section id="seaweed">
+
+        <!-- 1 – Korean Crispy Seaweed Snack (Spicy) -->
+        <article class="lab-card">
+          <h3>1. Korean Crispy Seaweed Snack (Spicy)</h3>
+          <img src="https://i.imghippo.com/files/Kom1980KQ.jpg"
+               alt="Korean Crispy Seaweed Snack (Spicy)"
+               style="max-width:180px; border-radius:8px; margin:8px 0;">
+          <p><b>Common name:</b> Gim (Korean dried seaweed) / Nori</p>
+          <p><b>Scientific name:</b> <i>Pyropia</i> / <i>Porphyra</i> spp.</p>
+          <p><b>Producer / Factory:</b> Kimnori (Kwangcheon Kimnori, South Korea)</p>
+          <p><b>Ingredients:</b> Seaweed (~70%), vegetable oil (e.g. canola), chilli seasoning/flavour oil, sesame oil, sugar, sesame, salt.</p>
+          <p><b>Purpose of the product:</b> Ready-to-eat savoury snack; also used as topping for rice or noodles.</p>
+          <p><b>Benefit of the product:</b> Low-calorie snack; provides minerals (especially iodine and other micronutrients), some vitamins and dietary fibre from seaweed.</p>
+        </article>
+
+        <!-- 2 – Laverland Crunch Wasabi -->
+        <article class="lab-card">
+          <h3>2. Laverland Crunch Wasabi Korean Seaweed Snack</h3>
+          <img src="https://i.imghippo.com/files/aNR3180SN.jpeg"
+               alt="Laverland Crunch Wasabi Korean Seaweed Snack"
+               style="max-width:180px; border-radius:8px; margin:8px 0;">
+          <p><b>Common name:</b> Laver (gim / nori seaweed) / red algae</p>
+          <p><b>Scientific name:</b> <i>Pyropia</i> / <i>Porphyra</i> spp.</p>
+          <p><b>Producer / Factory:</b> Manjun Foods Co., Ltd., Korea</p>
+          <p><b>Ingredients:</b> Seaweed (laver) 65%, corn oil, wasabi seasoning (salt, glucose, yeast extract powder, vegetable powder, corn oil, wasabi stem powder, spice extract containing mustard), salt.</p>
+          <p><b>Purpose of the product:</b> Ready-to-eat crispy seaweed snack, wasabi-flavoured; used as a side dish or topping with rice, sushi, beer snacks, etc.</p>
+          <p><b>Benefit of the product:</b> Low in calories; contains dietary fibre and protein; provides minerals (iodine, iron) and vitamins; lighter alternative to fried snacks.</p>
+        </article>
+
+        <!-- 3 – Tao Kae Noi Big Bang Grilled Seaweed – Hot & Spicy -->
+        <article class="lab-card">
+          <h3>3. Tao Kae Noi Big Bang Grilled Seaweed – Hot & Spicy</h3>
+          <img src="https://i.imghippo.com/files/AjxD6568Zqw.jpeg"
+               alt="Tao Kae Noi Big Bang Grilled Seaweed – Hot & Spicy"
+               style="max-width:180px; border-radius:8px; margin:8px 0;">
+          <p><b>Common name:</b> Green sea lettuce seaweed</p>
+          <p><b>Scientific name:</b> <i>Ulva</i> spp.</p>
+          <p><b>Producer / Factory:</b> Taokaenoi Food & Marketing PCL, Thailand</p>
+          <p><b>Ingredients:</b> Seaweed 95%, grilled spicy flavour seasoning (sugar 1.75%, smoked flavour powder, hydrolyzed soy protein, chilli powder 0.55%, salt 0.49%, flavour enhancers INS 627 & INS 631). Contains soybean and peanut (allergen).</p>
+          <p><b>Purpose of the product:</b> Ready-to-eat grilled seaweed snack with spicy hot flavour.</p>
+          <p><b>Benefit of the product:</b> Good source of minerals (iodine, iron, calcium); low‑calorie snack (20 kcal per serving); high dietary fibre (1.0 g per serving); contains antioxidants.</p>
+        </article>
+
+        <!-- 4 – Tao Kae Noi Big Roll – Grilled Seaweed Roll (Spicy Flavour) -->
+        <article class="lab-card">
+          <h3>4. Tao Kae Noi Big Roll – Grilled Seaweed Roll (Spicy Flavour)</h3>
+          <img src="https://i.imghippo.com/files/PVju9648VI.jpeg"
+               alt="Tao Kae Noi Big Roll – Grilled Seaweed Roll (Spicy Flavour)"
+               style="max-width:180px; border-radius:8px; margin:8px 0;">
+          <p><b>Common name:</b> Spicy grilled seaweed roll snack</p>
+          <p><b>Scientific name:</b> <i>Porphyra</i> spp.</p>
+          <p><b>Producer / Factory:</b> Taokaenoi Food & Marketing PCL</p>
+          <p><b>Ingredients:</b> Seaweed (95%), sugar (1.75%), smoked flavour powder (0.92%), hydrolyzed soy protein (0.64%), chilli powder (0.55%), salt (0.49%), flavour enhancer (0.45%); may contain peanut.</p>
+          <p><b>Purpose of the product:</b> Snack food made from processed seaweed.</p>
+          <p><b>Benefit of the product:</b> Rich in dietary fibre; contains iodine and minerals; lower‑calorie than fried snacks.</p>
+        </article>
+
+        <!-- 5 – NOI Crispy Tempura Seaweed Snack – Spicy -->
+        <article class="lab-card">
+          <h3>5. NOI Crispy Tempura Seaweed Snack – Spicy</h3>
+          <img src="https://i.imghippo.com/files/JzK7137tRA.jpeg"
+               alt="NOI Crispy Tempura Seaweed Snack – Spicy"
+               style="max-width:180px; border-radius:8px; margin:8px 0;">
+          <p><b>Common name:</b> Laver / seaweed snack</p>
+          <p><b>Scientific name:</b> <i>Pyropia</i> / <i>Porphyra</i> spp.</p>
+          <p><b>Producer / Factory:</b> TG Shai Wang Food (Thailand) Co., Ltd.</p>
+          <p><b>Ingredients:</b> Wheat flour (~31%), seaweed (~25%), rice flour (~11.5%), spicy seasoning (sugar, salt, chilli, onion, garlic, yeast extract, flavour enhancers), modified corn starch, palm olein, white sesame seeds, egg white powder.</p>
+          <p><b>Purpose of the product:</b> Ready-to-eat crunchy tempura-coated seaweed snack for casual snacking.</p>
+          <p><b>Benefit of the product:</b> Provides minerals, protein and fibre from seaweed and sesame; higher energy due to tempura coating but lighter than many deep‑fried chips.</p>
+        </article>
+
+        <!-- 6 – NOI Crispy Tempura Seaweed Snack – Wasabi -->
+        <article class="lab-card">
+          <h3>6. NOI Crispy Tempura Seaweed Snack – Wasabi</h3>
+          <img src="https://i.imghippo.com/files/YiIu7279cTg.jpeg"
+               alt="NOI Crispy Tempura Seaweed Snack – Wasabi"
+               style="max-width:180px; border-radius:8px; margin:8px 0;">
+          <p><b>Common name:</b> Laver / seaweed snack</p>
+          <p><b>Scientific name:</b> <i>Pyropia</i> / <i>Porphyra</i> spp.</p>
+          <p><b>Producer / Factory:</b> TG Shai Wang Food (Thailand) Co., Ltd.</p>
+          <p><b>Ingredients:</b> Wheat flour, seaweed, rice flour, wasabi seasoning (sugar, salt, onion, garlic, pepper, flavour enhancer).</p>
+          <p><b>Purpose of the product:</b> Ready-to-eat wasabi-flavoured seaweed snack.</p>
+          <p><b>Benefit of the product:</b> Provides minerals such as iodine and iron; crunchy alternative to potato chips; convenient and portable.</p>
+        </article>
+
+        <!-- 7 – NOI Crispy Seaweed with Almond Slices – Original -->
+        <article class="lab-card">
+          <h3>7. NOI Crispy Seaweed with Almond Slices – Original</h3>
+          <img src="https://i.imghippo.com/files/gvd2661DEA.jpeg"
+               alt="NOI Crispy Seaweed with Almond Slices – Original"
+               style="max-width:180px; border-radius:8px; margin:8px 0;">
+          <p><b>Common name:</b> Laver / seaweed snack</p>
+          <p><b>Scientific name:</b> <i>Pyropia</i> / <i>Porphyra</i> spp.</p>
+          <p><b>Producer / Factory:</b> TG Shai Wang Food (Thailand) Co., Ltd.</p>
+          <p><b>Ingredients:</b> Seaweed (~60%), white sesame seeds (~16%), almond slices (~15%), maltose, soy sauce, iodized salt.</p>
+          <p><b>Purpose of the product:</b> Ready-to-eat crispy snack; alternative to chips; suitable for all ages.</p>
+          <p><b>Benefit of the product:</b> Almonds provide healthy fats, protein and vitamin E; seaweed provides iodine; baked, not deep‑fried; supports digestion and satiety.</p>
+        </article>
+
+        <!-- 8 – NOI Crispy Seaweed with Pumpkin Seeds – Original -->
+        <article class="lab-card">
+          <h3>8. NOI Crispy Seaweed with Pumpkin Seeds – Original</h3>
+          <img src="https://i.imghippo.com/files/rwZ9051MX.jpeg"
+               alt="NOI Crispy Seaweed with Pumpkin Seeds – Original"
+               style="max-width:180px; border-radius:8px; margin:8px 0;">
+          <p><b>Common name:</b> Laver / seaweed snack</p>
+          <p><b>Scientific name:</b> <i>Pyropia</i> / <i>Porphyra</i> spp.</p>
+          <p><b>Producer / Factory:</b> TG Shai Wang Food (Thailand) Co., Ltd.</p>
+          <p><b>Ingredients:</b> Seaweed (~40–60%), pumpkin seeds (~10–20%), white sesame seeds (~5–10%), sugar (~5–10%), salt (~1–3%).</p>
+          <p><b>Purpose of the product:</b> Ready-to-eat crunchy snack; eaten alone or as topping.</p>
+          <p><b>Benefit of the product:</b> Source of dietary fibre; minerals from seaweed; lower fat than fried snacks; oil‑free baked product.</p>
+        </article>
+
+        <!-- 9 – NOI Crispy Seaweed with Almond Slices – Hot & Spicy -->
+        <article class="lab-card">
+          <h3>9. NOI Crispy Seaweed with Almond Slices – Hot & Spicy</h3>
+          <img src="https://i.imghippo.com/files/rYX1979PQg.jpeg"
+               alt="NOI Crispy Seaweed with Almond Slices – Hot & Spicy"
+               style="max-width:180px; border-radius:8px; margin:8px 0;">
+          <p><b>Common name:</b> Laver / seaweed snack</p>
+          <p><b>Scientific name:</b> <i>Pyropia</i> / <i>Porphyra</i> spp.</p>
+          <p><b>Producer / Factory:</b> TG Shai Wang Food (Thailand) Co., Ltd.</p>
+          <p><b>Ingredients:</b> Seaweed, white sesame, almond slices, chilli powder, sugar, salt, soy sauce powder.</p>
+          <p><b>Purpose of the product:</b> Ready-to-eat flavoured seaweed snack.</p>
+          <p><b>Benefit of the product:</b> Rich in minerals and fibre; antioxidants from almonds and sesame; plant‑based, lower‑fat snack.</p>
+        </article>
+
+        <!-- 10 – SaraAiy Homegrown Seaweed -->
+        <article class="lab-card">
+          <h3>10. SaraAiy Homegrown Seaweed</h3>
+          <img src="https://i.imghippo.com/files/PWeD2270Px.jpeg"
+               alt="SaraAiy Homegrown Seaweed"
+               style="max-width:180px; border-radius:8px; margin:8px 0;">
+          <p><b>Common name:</b> Homegrown dried seaweed (sea moss)</p>
+          <p><b>Scientific name:</b> <i>Gracilaria</i> spp.</p>
+          <p><b>Producer / Factory:</b> Cweed Aqua Solutions Sdn. Bhd.</p>
+          <p><b>Ingredients:</b> 100% dried edible seaweed.</p>
+          <p><b>Purpose of the product:</b> Food ingredient and health supplement.</p>
+          <p><b>Benefit of the product:</b> Rich in minerals, vitamins, fibre, protein, amino acids and antioxidants; anti‑inflammatory properties.</p>
+        </article>
+
+        <!-- 11 – Fujicco Benri Wakame (Dry Seaweed) -->
+        <article class="lab-card">
+          <h3>11. Fujicco Benri Wakame (Dry Seaweed)</h3>
+          <img src="https://i.imghippo.com/files/Hzb9982yrc.jpeg"
+               alt="Fujicco Benri Wakame (Dry Seaweed)"
+               style="max-width:180px; border-radius:8px; margin:8px 0;">
+          <p><b>Common name:</b> Dried wakame seaweed</p>
+          <p><b>Scientific name:</b> <i>Undaria pinnatifida</i></p>
+          <p><b>Producer / Factory:</b> Fujicco Co., Ltd., Japan</p>
+          <p><b>Ingredients:</b> Salted seaweed.</p>
+          <p><b>Purpose of the product:</b> Food ingredient for soups and salads.</p>
+          <p><b>Benefit of the product:</b> Rich in iodine; high dietary fibre; supports thyroid and digestive health; long shelf life.</p>
+        </article>
+
+        <!-- 12 – Kaisou Salad (Dried Mixed Seaweed) -->
+        <article class="lab-card">
+          <h3>12. Kaisou Salad (Dried Mixed Seaweed)</h3>
+          <img src="https://i.imghippo.com/files/yO1947zDY.jpeg"
+               alt="Kaisou Salad (Dried Mixed Seaweed)"
+               style="max-width:180px; border-radius:8px; margin:8px 0;">
+          <p><b>Scientific name:</b> <i>Undaria pinnatifida</i>, <i>Gelidium</i> spp., <i>Gracilaria</i> spp., <i>Eucheuma</i> spp.</p>
+          <p><b>Producer / Factory:</b> Sanko Shokuhin Co., Ltd., Japan</p>
+          <p><b>Ingredients:</b> Dried mixed seaweed.</p>
+          <p><b>Purpose of the product:</b> Ingredient for salads and soups.</p>
+          <p><b>Benefit of the product:</b> Rich in iodine, calcium, iron, magnesium; very low calories; vegan; supports digestion and weight management.</p>
+        </article>
+
+        <!-- 13 – Dried Brown Seaweed (Korean Seaweed) -->
+        <article class="lab-card">
+          <h3>13. Dried Brown Seaweed (Korean Seaweed)</h3>
+          <img src="https://i.imghippo.com/files/uoXr3454MA.jpeg"
+               alt="Dried Brown Seaweed (Korean Seaweed)"
+               style="max-width:180px; border-radius:8px; margin:8px 0;">
+          <p><b>Scientific name:</b> <i>Undaria pinnatifida</i></p>
+          <p><b>Producer / Factory:</b> Goattawess Food Co., Ltd., South Korea</p>
+          <p><b>Ingredients:</b> 100% dried brown seaweed.</p>
+          <p><b>Purpose of the product:</b> Soup and dish ingredient.</p>
+          <p><b>Benefit of the product:</b> Mineral‑rich; low fat; supports digestion; traditionally consumed for postpartum recovery.</p>
+        </article>
+
+        <!-- 14 – Tohira Hidaka Konbu -->
+        <article class="lab-card">
+          <h3>14. Tohira Hidaka Konbu</h3>
+          <img src="https://i.imghippo.com/files/ZS5067Bns.jpeg"
+               alt="Tohira Hidaka Konbu"
+               style="max-width:180px; border-radius:8px; margin:8px 0;">
+          <p><b>Common name:</b> Kombu</p>
+          <p><b>Scientific name:</b> <i>Saccharina japonica</i></p>
+          <p><b>Producer / Factory:</b> Hidaka, Hokkaido, Japan</p>
+          <p><b>Ingredients:</b> 100% dried kombu seaweed.</p>
+          <p><b>Purpose of the product:</b> Used for making dashi and flavour enhancement.</p>
+          <p><b>Benefit of the product:</b> Rich in umami, iodine, calcium, iron; good source of dietary fibre.</p>
+        </article>
+
+        <!-- 15 – Tohira Hokkaido Cut Konbu -->
+        <article class="lab-card">
+          <h3>15. Tohira Hokkaido Cut Konbu</h3>
+          <img src="https://i.imghippo.com/files/Zujd4179HIA.jpeg"
+               alt="Tohira Hokkaido Cut Konbu"
+               style="max-width:180px; border-radius:8px; margin:8px 0;">
+          <p><b>Scientific name:</b> <i>Saccharina japonica</i></p>
+          <p><b>Producer / Factory:</b> Hokkaido, Japan</p>
+          <p><b>Ingredients:</b> 100% dried kombu seaweed.</p>
+          <p><b>Purpose of the product:</b> Used for soups, stews and rice dishes.</p>
+          <p><b>Benefit of the product:</b> High mineral content; natural and additive‑free.</p>
+        </article>
+
+      </section>
+
+      <h2>🍄 Mushroom Products</h2>
+
+      <!-- 16 – Enoki Mushroom -->
+      <article class="lab-card">
+        <h3>16. Enoki Mushroom</h3>
+        <img src="https://i.imghippo.com/files/VUi6118zA.jpeg"
+             alt="Enoki Mushroom"
+             style="max-width:180px; border-radius:8px; margin:8px 0;">
+        <p><b>Scientific name:</b> <i>Flammulina velutipes</i></p>
+        <p><b>Ingredients:</b> 100% fresh enoki mushroom</p>
+        <p><b>Purpose:</b> Cooking ingredient.</p>
+        <p><b>Benefit:</b> Low calorie; provides fibre and antioxidants; supports digestion.</p>
+      </article>
+
+      <!-- 17 – Country Pride Portobello Mushroom -->
+      <article class="lab-card">
+        <h3>17. Country Pride Portobello Mushroom</h3>
+        <img src="https://i.imghippo.com/files/chjc8572rY.jpeg"
+             alt="Country Pride Portobello Mushroom"
+             style="max-width:180px; border-radius:8px; margin:8px 0;">
+        <p><b>Scientific name:</b> <i>Agaricus bisporus</i></p>
+        <p><b>Ingredients:</b> 100% Portobello mushroom</p>
+        <p><b>Purpose:</b> Cooking and meat substitute.</p>
+        <p><b>Benefit:</b> Provides fibre, B‑vitamins, potassium and antioxidants.</p>
+      </article>
+
+      <!-- 18 – Tuscan Fields Brown Button Mushroom -->
+      <article class="lab-card">
+        <h3>18. Tuscan Fields Brown Button Mushroom</h3>
+        <img src="https://i.imghippo.com/files/chjc8572rY.jpeg"
+             alt="Tuscan Fields Brown Button Mushroom"
+             style="max-width:180px; border-radius:8px; margin:8px 0;">
+        <p><b>Scientific name:</b> <i>Agaricus bisporus</i></p>
+        <p><b>Ingredients:</b> 100% brown button mushroom</p>
+        <p><b>Purpose:</b> Used in stir‑fries, soups, pasta and pizza.</p>
+        <p><b>Benefit:</b> Source of fibre and B‑vitamins; low in calories.</p>
+      </article>
+
+      <!-- 19 – King Oyster Mushroom -->
+      <article class="lab-card">
+        <h3>19. King Oyster Mushroom</h3>
+        <img src="https://i.imghippo.com/files/WP6642F.jpeg"
+             alt="King Oyster Mushroom"
+             style="max-width:180px; border-radius:8px; margin:8px 0;">
+        <p><b>Scientific name:</b> <i>Pleurotus eryngii</i></p>
+        <p><b>Ingredients:</b> 100% fresh mushroom</p>
+        <p><b>Purpose:</b> Cooking and vegetarian dishes.</p>
+        <p><b>Benefit:</b> High in fibre and protein; strong umami flavour.</p>
+      </article>
+
+      <!-- 20 – Fresh Black Fungus -->
+      <article class="lab-card">
+        <h3>20. Fresh Black Fungus</h3>
+        <img src="https://i.imghippo.com/files/BZFw6749II.jpeg"
+             alt="Fresh Black Fungus"
+             style="max-width:180px; border-radius:8px; margin:8px 0;">
+        <p><b>Scientific name:</b> <i>Auricularia polytricha</i></p>
+        <p><b>Ingredients:</b> 100% black fungus</p>
+        <p><b>Purpose:</b> Used in soups and stir‑fries.</p>
+        <p><b>Benefit:</b> Provides fibre and iron; valued for its crunchy texture.</p>
+      </article>
+
+      <!-- 21 – Cauliflower Mushroom -->
+      <article class="lab-card">
+        <h3>21. Cauliflower Mushroom</h3>
+        <img src="https://i.imghippo.com/files/Vc3598aFk.jpeg"
+             alt="Cauliflower Mushroom"
+             style="max-width:180px; border-radius:8px; margin:8px 0;">
+        <p><b>Scientific name:</b> <i>Sparassis crispa</i></p>
+        <p><b>Ingredients:</b> 100% cauliflower mushroom</p>
+        <p><b>Purpose:</b> Culinary use (frying, boiling, hot pot).</p>
+        <p><b>Benefit:</b> Low in fat; provides energy and protein.</p>
+      </article>
+
+    </section>
+  </section>
+</main>
+
+<footer>
+   Practical 1 - Seaweed & Mushroom Products
+</footer>
+
+</body>
+</html>

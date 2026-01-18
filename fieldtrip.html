@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SIE3006 Lenggeng,Negeri Sembilan Field Trip</title>
+
+<style>
+:root{
+    --dark:#2f5d50;
+    --mid:#5f8f7b;
+    --light:#e7f2ec;
+    --paper:#fffdf2;
+}
+
+html{ scroll-behavior:smooth; }
+
+body{
+    margin:0;
+    font-family:"Segoe UI", sans-serif;
+    background:var(--light);
+}
+
+/* Header */
+header{
+    background:var(--dark);
+    color:white;
+    padding:18px 30px;
+    font-size:22px;
+}
+
+/* Layout */
+.container{
+    display:flex;
+}
+
+/* Navigation */
+.nav{
+    width:260px;
+    background:#23463c;
+    color:white;
+    padding:20px;
+    position:sticky;
+    top:0;
+    height:100vh;
+    overflow-y:auto;
+}
+
+.nav h3{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.nav a{
+    display:block;
+    text-decoration:none;
+    color:white;
+    background:#3f7667;
+    padding:8px;
+    margin-bottom:6px;
+    border-radius:8px;
+    font-size:14px;
+}
+
+.nav a:hover{
+    background:#5f8f7b;
+}
+
+.nav .divider{
+    margin:15px 0;
+    border-top:1px solid #5f8f7b;
+}
+
+/* Content */
+.content{
+    flex:1;
+    padding:30px;
+}
+
+/* House section */
+.house{
+    background:var(--paper);
+    padding:25px;
+    border-radius:18px;
+    margin-bottom:35px;
+    box-shadow:0 8px 18px rgba(0,0,0,0.15);
+}
+
+.house h2{
+    color:var(--dark);
+}
+
+/* Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+th{
+    background:var(--mid);
+    color:white;
+    padding:10px;
+    font-size:13px;
+}
+
+td{
+    padding:10px;
+    border-bottom:1px solid #e0e0e0;
+    font-size:13px;
+    text-align:center;
+}
+
+/* Species image */
+.species-img{
+    width:120px;
+    height:90px;
+    border-radius:10px;
+    object-fit:cover;
+    background:#ddd;
+}
+
+/* Media sections */
+.media{
+    background:var(--paper);
+    padding:25px;
+    border-radius:18px;
+    margin-bottom:35px;
+    box-shadow:0 8px 18px rgba(0,0,0,0.15);
+}
+
+.media h2{
+    color:var(--dark);
+}
+
+.media-box{
+    background:white;
+    padding:15px;
+    border-radius:12px;
+}
+
+/* Photo gallery */
+.photo-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    gap:15px;
+}
+
+.photo-grid img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+audio, video{
+    width:100%;
+	.video-container { position: relative; overflow: hidden; margin-bottom: 15px; }
+.video-container iframe { transition: transform 0.3s; }
+.video-container:hover iframe { transform: scale(1.02); }
+.video-intro { color: #5f8f7b; font-weight: bold; margin: 10px 0; text-align: center; }
+.video-info { background: rgba(255,255,255,0.9); padding: 15px; border-radius: 12px; }
+.video-info p { margin: 0 0 10px; color: #2f5d50; }
+.watch-full { display: inline-block; background: #5f8f7b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 25px; font-weight: bold; transition: background 0.3s; }
+.watch-full:hover { background: #2f5d50; }
+
+}
+</style>
+</head>
+
+<body>
+<nav style="
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background:#ffffff;
+  border-bottom:2px solid #1a7a7a;
+  padding:8px 10%;
+  margin-bottom:15px;
+">
+  <button
+    onclick="location.href='index.html'"
+    style="
+      padding:8px 14px;
+      border-radius:16px;
+      border:1px solid #1a7a7a;
+      background:#e8f5f0;
+      color:#0d7a7a;
+      font-family:'Segoe UI',sans-serif;
+      font-size:0.9rem;
+      cursor:pointer;
+    "
+  >
+    ⬅ Back to Home
+  </button>
+</nav>
+<header>SIE3006 | Lenggeng,Negeri Sembilan Field Trip</header>
+
+
+<div class="container">
+
+<!-- Navigation -->
+<div class="nav">
+    <h3>Houses</h3>
+    <a href="#house1">House 1</a>
+    <a href="#house2">House 2</a>
+    <a href="#house3">House 3</a>
+	<a href="#house4">House 4</a>
+    <a href="#house5">House 5</a>
+    <a href="#house6">House 6</a>
+	<a href="#house7">House 7</a>
+    <a href="#house8">House 8</a>
+    <a href="#house9">House 9</a>
+	<a href="#house10">House 10</a>
+    <a href="#house11">House 11</a>
+    <a href="#house12">House 12</a>
+	<a href="#house13">House 13</a>
+  
+
+    <div class="divider"></div>
+
+    <h3>Additional Info</h3>
+    <a href="#photo">📸 Field Trip Photograph</a>
+    <a href="#video">🎥 Field Trip Video</a>
+</div>
+
+<!-- Content -->
+<div class="content">
+
+<!-- HOUSE 1 -->
+<div class="house" id="house1">
+    <h2>House 1</h2>
+
+    <table>
+        <tr>
+            <th>Species Photo</th>
+            <th>Scientific Name</th>
+            <th>Common Name</th>
+            <th>No. of Individuals</th>
+        </tr>
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768499062354-0b5edff5-adb0-4c5d-8e3e-ac5dcb72f10e.jpg" class="species-img"></td>
+            <td><i>Ixora coccinea</i></td>
+            <td>Scarlett  Jungleflame</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768499250362-e83c66c3-f2ec-426b-8469-be2166157403.jpeg" class="species-img"></td>
+            <td><i>Hibiscus rosa-sinensis</i></td>
+            <td>Hibiscus (Bunga raya)</td>
+            <td>4</td>
+        </tr>
+    </table>
+</div>
+
+<!-- HOUSE 2 --> 
+<div class="house" id="house2"> 
+    <h2>House 2</h2> 
+
+    <table>
+        <tr>
+            <th>Species Photo</th>
+            <th>Scientific Name</th>
+            <th>Common Name</th>
+            <th>No. of Individuals</th>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768635116834-9f3da693-1daf-4f8d-a9ac-25f65f955df4.jpg" class="species-img"></td>
+            <td><i>Cocos nucifera</i></td>
+            <td>Coconut tree (kelapa)</td>
+            <td>3</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768663047654-05c099c5-a0b0-4da3-afe9-68e9bac31636.jpg" class="species-img"></td>
+            <td><i>Musa spp.</i></td>
+            <td>Banana (pisang)</td>
+            <td>7</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768665373198-288d1506-24ba-44e7-b2e7-a35a4de2fd11.webp" class="species-img"></td>
+            <td><i>Cymbopogon citratus</i></td>
+            <td>Lemongrass (serai)</td>
+            <td>5</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768667544257-72d1efda-29e0-41eb-9b41-e3cb1f57599d.png" class="species-img"></td>
+            <td><i>Sansevieria trifasciata</i></td>
+            <td>Snake plant (lidah jin)</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768673623773-e9b22295-c1d4-4fcd-819f-1e4fc65c3f85.jpg" class="species-img"></td>
+            <td><i>Polystichum munitum</i></td>
+            <td>Sword fern</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768673813769-4997cf4f-433a-466f-9318-14226249eeda.webp" class="species-img"></td>
+            <td><i>Sansevieria cylindrica</i></td>
+            <td>Cylindrical snake plant</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768666013962-8594a730-11c0-41ac-9e6a-7121a84fc790.jpg" class="species-img"></td>
+            <td><i>Garcinia mangostana</i></td>
+            <td>Mangosteen</td>
+            <td>2</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768664724440-8c3f4267-b809-4701-8d10-0ba0bafdeaa8.webp" class="species-img"></td>
+            <td><i>Durio spp.</i></td>
+            <td>Durian</td>
+            <td>4</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768673922242-148df659-35d6-477c-bb0d-1a67d44fb038.jpeg" class="species-img"></td>
+            <td><i>Syzygium aqueum</i></td>
+            <td>Water apple (jambu air)</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768665887297-2502ca94-d9e4-4d2e-86db-dbfe8480ac1c.webp" class="species-img"></td>
+            <td><i>Averrhoa bilimbi</i></td>
+            <td>Bilimbi (belimbing buluh)</td>
+            <td>3</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768674096860-0f50836c-771a-4d89-ae8b-5c96e9837aa7.jpg" class="species-img"></td>
+            <td><i>Clitoria ternatea</i></td>
+            <td>Butterfly pea (bunga telang)</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768674418654-4608dfdc-794d-4545-a4d7-de0a13f50ab8.jpg" class="species-img"></td>
+            <td><i>Momordica charantia</i></td>
+            <td>Bitter melon (peria katak)</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768674533866-e1d3ad3d-d61d-49d8-ad43-c0c97b5309c2.jpeg" class="species-img"></td>
+            <td><i>Bougainvillea</i> spp.</td>
+            <td>Bunga kertas</td>
+            <td>7</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768662022990-3f7af1a3-210c-4db5-a4c2-9879aa9dd09d.png" class="species-img"></td>
+            <td><i>Manihot esculenta</i></td>
+            <td>Cassava (ubi kayu)</td>
+            <td>3</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768674839834-c2b4453e-f4d8-406e-bf77-570e41dd4f43.jpg" class="species-img"></td>
+            <td><i>Thysanolaena latifolia</i></td>
+            <td>Tiger grass</td>
+            <td>5</td>
+        </tr>
+    </table>
+</div>
+
+
+<!-- HOUSE 3 --> 
+<div class="house" id="house3"> 
+    <h2>House 3</h2> 
+
+    <table>
+        <tr>
+            <th>Species Photo</th>
+            <th>Scientific Name</th>
+            <th>Common Name</th>
+            <th>No. of Individuals</th>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768665887297-2502ca94-d9e4-4d2e-86db-dbfe8480ac1c.webp" class="species-img"></td>
+            <td><i>Averrhoa bilimbi</i></td>
+            <td>Bilimbi (Belimbing buluh)</td>
+            <td>2</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768666782793-a4442472-8a86-48fe-aa94-16ccad221c37.webp" class="species-img"></td>
+            <td><i>Aloe barbadensis miller</i></td>
+            <td>Aloe vera</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768667544257-72d1efda-29e0-41eb-9b41-e3cb1f57599d.png" class="species-img"></td>
+            <td><i>Sansevieria trifasciata</i></td>
+            <td>Snake plant (lidah jin)</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768665313657-cc303ba9-443f-481f-be51-20c61a841179.png" class="species-img"></td>
+            <td><i>Aglaonema crispum</i></td>
+            <td>Chinese evergreen (keladi)</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768671728413-0ad0293d-864b-40ef-8e9a-36788ea6d338.png" class="species-img"></td>
+            <td><i>Artocarpus heterophyllus</i></td>
+            <td>Honey jackfruit (nangka madu)</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768665273813-85d97a76-a68d-4720-ad12-e9444678324d.webp" class="species-img"></td>
+            <td><i>Nephelium lappaceum</i></td>
+            <td>Pokok rambutan</td>
+            <td>3</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768662022990-3f7af1a3-210c-4db5-a4c2-9879aa9dd09d.png" class="species-img"></td>
+            <td><i>Manihot esculenta</i></td>
+            <td>Cassava (pokok ubi kayu)</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768635116834-9f3da693-1daf-4f8d-a9ac-25f65f955df4.jpg" class="species-img"></td>
+            <td><i>Cocos nucifera</i></td>
+            <td>Coconut tree (kelapa)</td>
+            <td>4</td>
+        </tr>
+    </table>
+</div>
+
+
+<!-- HOUSE 4 --> 
+<div class="house" id="house4"> 
+    <h2>House 4</h2> 
+
+    <table>
+        <tr>
+            <th>Species Photo</th>
+            <th>Scientific Name</th>
+            <th>Common Name</th>
+            <th>No. of Individuals</th>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768673084773-a7666635-e1a9-4e4b-ab9e-b553bb7031f3.jpeg" class="species-img"></td>
+            <td><i>Diplazium esculentum</i></td>
+            <td>Vegetable fern (paku pakis)</td>
+            <td>6</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768662022990-3f7af1a3-210c-4db5-a4c2-9879aa9dd09d.png" class="species-img"></td>
+            <td><i>Manihot esculenta</i></td>
+            <td>Cassava (pokok ubi kayu)</td>
+            <td>3</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768670170182-c543c9da-c2be-408a-b258-c8ac1a365d45.png" class="species-img"></td>
+            <td><i>Lansium domesticum</i></td>
+            <td>Lanzones (lang­sat) </td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768672839954-d19bd8ec-13c9-4c55-b3f5-12f7a25fef31.jpg" class="species-img"></td>
+            <td><i>Ficus variegata</i></td>
+            <td>Red-stem fig</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768665887297-2502ca94-d9e4-4d2e-86db-dbfe8480ac1c.webp" class="species-img"></td>
+            <td><i>Averrhoa bilimbi</i></td>
+            <td>Bilimbi (Belimbing buluh)</td>
+            <td>2</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768669812294-e78024b3-4a4d-439f-a842-f5a23e62b0e7.jpg" class="species-img"></td>
+            <td><i>Archidendron jiringa</i></td>
+            <td>Jering</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768670392360-1ab26a9c-b9b8-44bc-a9f6-5b09e9127a5f.jpg" class="species-img"></td>
+            <td><i>Bougainvillea</i> spp.</td>
+            <td>Bunga kertas</td>
+            <td>7</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768640804272-8e2fba65-7216-4123-86e1-cd1fcbe30026.png" class="species-img"></td>
+            <td><i>Allamanda cathartica</i></td>
+            <td>Golden trumpet</td>
+            <td>5</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768672006382-2a734e95-2b15-4cca-ae51-01a7d1d8ab10.png" class="species-img"></td>
+            <td><i>Citrus aurantifolia</i></td>
+            <td>Limau nipis</td>
+            <td>3</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768672441786-cea9e347-a2a4-4eea-acb9-7f52fc623326.jpg" class="species-img"></td>
+            <td><i>Piper betle</i> L.</td>
+            <td>Sirih</td>
+            <td>2</td>
+        </tr>
+    </table>
+</div>
+
+
+<!-- HOUSE 5 --> 
+<div class="house" id="house5"> 
+    <h2>House 5</h2> 
+
+    <table>
+        <tr>
+            <th>Species Photo</th>
+            <th>Scientific Name</th>
+            <th>Common Name</th>
+            <th>No. of Individuals</th>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768663047654-05c099c5-a0b0-4da3-afe9-68e9bac31636.jpg" class="species-img"></td>
+            <td><i>Musa</i> spp.</td>
+            <td>Banana (pisang)</td>
+            <td>20</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768662022990-3f7af1a3-210c-4db5-a4c2-9879aa9dd09d.png" class="species-img"></td>
+            <td><i>Manihot esculenta</i></td>
+            <td>Cassava (pokok ubi kayu)</td>
+            <td>4</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768675093288-435838b3-a936-432a-a9da-b18abf5f8957.avif" class="species-img"></td>
+            <td><i>Mangifera indica</i></td>
+            <td>Mango (mangga)</td>
+            <td>4</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768675273195-01936c3f-148e-4863-8f85-b126b65fc607.jpg" class="species-img"></td>
+            <td><i>Melothria pendula</i></td>
+            <td>Creeping cucumber (timun tikus)</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768675461912-b6cee255-1afe-4670-87ad-a633e416efaf.jpg" class="species-img"></td>
+            <td><i>Asplenium nidus</i></td>
+            <td>Bird’s nest fern (pokok langsuyar)</td>
+            <td>3</td>
+        </tr>
+    </table>
+</div>
+
+
+<!-- HOUSE 6 --> 
+<div class="house" id="house6"> 
+    <h2>House 6</h2> 
+
+    <table>
+        <tr>
+            <th>Species Photo</th>
+            <th>Scientific Name</th>
+            <th>Common Name</th>
+            <th>No. of Individuals</th>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768635116834-9f3da693-1daf-4f8d-a9ac-25f65f955df4.jpg" class="species-img"></td>
+            <td><i>Cocos nucifera</i></td>
+            <td>Coconut tree (kelapa)</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768663047654-05c099c5-a0b0-4da3-afe9-68e9bac31636.jpg" class="species-img"></td>
+            <td><i>Musa</i> spp.</td>
+            <td>Banana (pisang)</td>
+            <td>5</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768665273813-85d97a76-a68d-4720-ad12-e9444678324d.webp" class="species-img"></td>
+            <td><i>Nephelium lappaceum</i></td>
+            <td>Pokok rambutan</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768662022990-3f7af1a3-210c-4db5-a4c2-9879aa9dd09d.png" class="species-img"></td>
+            <td><i>Manihot esculenta</i></td>
+            <td>Cassava (pokok ubi kayu)</td>
+            <td>4</td>
+        </tr>
+    </table>
+</div>
+
+
+<!-- HOUSE 7 --> 
+<div class="house" id="house7"> 
+    <h2>House 7</h2> 
+
+    <table>
+        <tr>
+            <th>Species Photo</th>
+            <th>Scientific Name</th>
+            <th>Common Name</th>
+            <th>No. of Individuals</th>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768667139873-433f9158-e56c-484e-b286-f6561e23b900.jpeg" class="species-img"></td>
+            <td><i>Bambusa</i> spp.</td>
+            <td>Common bamboo (buluh)</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768663047654-05c099c5-a0b0-4da3-afe9-68e9bac31636.jpg" class="species-img"></td>
+            <td><i>Musa</i> spp.</td>
+            <td>Banana (pisang)</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768675776531-c85a8167-000f-4de2-adfd-f668b192f822.webp" class="species-img"></td>
+            <td><i>Heliconia psittacorum</i></td>
+            <td>Parrot heliconia</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768675872639-c145608d-d05b-4e87-9f20-6eef0ce3e5ed.webp" class="species-img"></td>
+            <td><i>Elaeis guineensis</i></td>
+            <td>Oil palm tree (kelapa sawit)</td>
+            <td>3</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768664724440-8c3f4267-b809-4701-8d10-0ba0bafdeaa8.webp" class="species-img"></td>
+            <td><i>Durio</i> spp.</td>
+            <td>Durian</td>
+            <td>4</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768635116834-9f3da693-1daf-4f8d-a9ac-25f65f955df4.jpg" class="species-img"></td>
+            <td><i>Cocos nucifera</i></td>
+            <td>Coconut tree (kelapa)</td>
+            <td>5</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768676054007-f5b6dc56-7f3a-44de-8238-185bf79dd0de.jpeg" class="species-img"></td>
+            <td><i>Cordyline fruticosa</i></td>
+            <td>Ti plant (pokok jenjuang)</td>
+            <td>7</td>
+        </tr>
+    </table>
+</div>
+
+
+<!-- HOUSE 8 --> 
+<div class="house" id="house8"> 
+    <h2>House 8</h2> 
+
+    <table>
+        <tr>
+            <th>Species Photo</th>
+            <th>Scientific Name</th>
+            <th>Common Name</th>
+            <th>No. of Individuals</th>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768665273813-85d97a76-a68d-4720-ad12-e9444678324d.webp" class="species-img"></td>
+            <td><i>Nephelium lappaceum</i></td>
+            <td>Pokok rambutan</td>
+            <td>4</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768635116834-9f3da693-1daf-4f8d-a9ac-25f65f955df4.jpg" class="species-img"></td>
+            <td><i>Cocos nucifera</i></td>
+            <td>Coconut tree (kelapa)</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768664724440-8c3f4267-b809-4701-8d10-0ba0bafdeaa8.webp" class="species-img"></td>
+            <td><i>Durio</i> spp.</td>
+            <td>Durian</td>
+            <td>3</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768671270515-d356e072-3141-4a40-ad64-fe32f253a387.png" class="species-img"></td>
+            <td><i>Artocarpus integer</i></td>
+            <td>Cempedak tree</td>
+            <td>4</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768671012419-74eee3a8-32e0-416d-a674-f4d8f3110d88.jpg" class="species-img"></td>
+            <td><i>Artocarpus altilis</i></td>
+            <td>Breadfruit (pokok sukun)</td>
+            <td>3</td>
+        </tr>
+    </table>
+</div>
+
+
+<!-- HOUSE 9 --> 
+<div class="house" id="house9"> 
+    <h2>House 9</h2> 
+
+    <table>
+        <tr>
+            <th>Species Photo</th>
+            <th>Scientific Name</th>
+            <th>Common Name</th>
+            <th>No. of Individuals</th>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768661361483-8b616381-16f0-411a-8be9-3d823fe4bcb3.png" class="species-img"></td>
+            <td><i>Capsicum</i>spp.</td>
+            <td>chili </td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768667544257-72d1efda-29e0-41eb-9b41-e3cb1f57599d.png" class="species-img"></td>
+            <td><i>Sansevieria trifasciata</i></td>
+            <td>Snake plant (lidah jin)</td>
+            <td>4</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768665373198-288d1506-24ba-44e7-b2e7-a35a4de2fd11.webp" class="species-img"></td>
+            <td><i>Cymbopogon citratus</i></td>
+            <td>Lemongrass (serai)</td>
+            <td>10</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768670835280-6aa93f34-cf6a-4c77-98bf-52e73830b815.webp" class="species-img"></td>
+            <td><i>Morus alba</i></td>
+            <td>White mulberry (kertau)</td>
+            <td>3</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768635116834-9f3da693-1daf-4f8d-a9ac-25f65f955df4.jpg" class="species-img"></td>
+            <td><i>Cocos nucifera</i></td>
+            <td>Coconut tree (kelapa)</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768665887297-2502ca94-d9e4-4d2e-86db-dbfe8480ac1c.webp" class="species-img"></td>
+            <td><i>Averrhoa bilimbi</i></td>
+            <td>Bilimbi (Belimbing buluh)</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768670680933-d5660187-d1b6-43a7-a19d-696085e1158e.jpg" class="species-img"></td>
+            <td><i>Citrus × microcarpa</i></td>
+            <td>Calamansi (limau kasturi)</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768666013962-8594a730-11c0-41ac-9e6a-7121a84fc790.jpg" class="species-img"></td>
+            <td><i>Garcinia mangostana</i></td>
+            <td>Mangosteen</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768670170182-c543c9da-c2be-408a-b258-c8ac1a365d45.png" class="species-img"></td>
+            <td><i>Lansium domesticum</i></td>
+            <td>Lanzones (lang­sat)</td>
+            <td>3</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768670392360-1ab26a9c-b9b8-44bc-a9f6-5b09e9127a5f.jpg" class="species-img"></td>
+            <td><i>Bougainvillea</i>spp.</td>
+            <td>Bunga kertas</td>
+            <td>11</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768665273813-85d97a76-a68d-4720-ad12-e9444678324d.webp" class="species-img"></td>
+            <td><i>Nephelium lappaceum</i></td>
+            <td>Pokok rambutan</td>
+            <td>5</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768676186645-a328a729-8ee7-4515-9bd5-d00582d73790.jpg" class="species-img"></td>
+            <td><i>Ananas comosus</i></td>
+            <td>Pineapple (nenas)</td>
+            <td>28</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768663047654-05c099c5-a0b0-4da3-afe9-68e9bac31636.jpg" class="species-img"></td>
+            <td><i>Musa</i> spp.</td>
+            <td>Banana (pisang)</td>
+            <td>9</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768676514622-5baa8908-be8b-49f0-837a-6ac269236abf.jpg" class="species-img"></td>
+            <td><i>Etlingera elatior</i></td>
+            <td>Torch ginger (bunga kantan)</td>
+            <td>7</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768662022990-3f7af1a3-210c-4db5-a4c2-9879aa9dd09d.png" class="species-img"></td>
+            <td><i>Manihot esculenta</i></td>
+            <td>Cassava shoots (pucuk ubi)</td>
+            <td>13</td>
+        </tr>
+    </table>
+</div>
+
+
+<!-- HOUSE 10 --> 
+<div class="house" id="house10"> 
+    <h2>House 10</h2> 
+
+    <table>
+        <tr>
+            <th>Species Photo</th>
+            <th>Scientific Name</th>
+            <th>Common Name</th>
+            <th>No. of Individuals</th>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768670392360-1ab26a9c-b9b8-44bc-a9f6-5b09e9127a5f.jpg" class="species-img"></td>
+            <td><i>Bougainvillea</i> spp.</td>
+            <td>Bunga kertas</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768677545346-1cae40f1-0dd3-401c-b402-b573e222981a.webp" class="species-img"></td>
+            <td><i>Cosmos sulphureus</i></td>
+            <td>Sulphur cosmos</td>
+            <td>9</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768677862347-2fb1d1e5-ffd9-42d5-95fc-c0ec2e38ed05.jpe" class="species-img"></td>
+            <td><i>Zinnia elegans</i></td>
+            <td>Common zinnia</td>
+            <td>2</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768678074847-31226570-94bd-44a1-8471-d68973e62826.avif" class="species-img"></td>
+            <td><i>Phalaenopsis</i> spp.</td>
+            <td>Moth orchid</td>
+            <td>4</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768675461912-b6cee255-1afe-4670-87ad-a633e416efaf.jpg" class="species-img"></td>
+            <td><i>Asplenium nidus</i></td>
+            <td>Bird’s nest fern</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768678139657-f6031ca9-73b0-4ba0-af07-23ef06711723.jpg" class="species-img"></td>
+            <td><i>Chrysalidocarpus lutescens</i></td>
+            <td>Areca palm</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768678272879-db75c430-4fea-464e-acfb-c61681866d92.jpg" class="species-img"></td>
+            <td><i>Cosmos caudatus</i></td>
+            <td>Ulam raja</td>
+            <td>2</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768671728413-0ad0293d-864b-40ef-8e9a-36788ea6d338.png" class="species-img"></td>
+            <td><i>Artocarpus heterophyllus</i></td>
+            <td>Jackfruit (nangka)</td>
+            <td>2</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768666013962-8594a730-11c0-41ac-9e6a-7121a84fc790.jpg" class="species-img"></td>
+            <td><i>Garcinia mangostana</i></td>
+            <td>Mangosteen</td>
+            <td>3</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768664724440-8c3f4267-b809-4701-8d10-0ba0bafdeaa8.webp" class="species-img"></td>
+            <td><i>Durio</i> spp.</td>
+            <td>Durian</td>
+            <td>8</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768669812294-e78024b3-4a4d-439f-a842-f5a23e62b0e7.jpg" class="species-img"></td>
+            <td><i>Archidendron jiringa</i></td>
+            <td>Jering</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768669707226-7f0b5a73-cff2-421a-a370-32e143192584.png" class="species-img"></td>
+            <td><i>Nephrolepis biserrata</i></td>
+            <td>Giant sword fern</td>
+            <td>3</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768635116834-9f3da693-1daf-4f8d-a9ac-25f65f955df4.jpg" class="species-img"></td>
+            <td><i>Cocos nucifera</i></td>
+            <td>Coconut tree (kelapa)</td>
+            <td>12</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768669029841-c42e4410-bc00-4503-b7b6-ee16307ac3d5.jpg" class="species-img"></td>
+            <td><i>Rosa</i> spp.</td>
+            <td>Rose</td>
+            <td>6</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768665373198-288d1506-24ba-44e7-b2e7-a35a4de2fd11.webp" class="species-img"></td>
+            <td><i>Cymbopogon citratus</i></td>
+            <td>Lemongrass (serai)</td>
+            <td>41</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768663047654-05c099c5-a0b0-4da3-afe9-68e9bac31636.jpg" class="species-img"></td>
+            <td><i>Musa</i> spp.</td>
+            <td>Banana (pisang)</td>
+            <td>5</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768661361483-8b616381-16f0-411a-8be9-3d823fe4bcb3.png" class="species-img"></td>
+            <td><i>Capsicum</i> spp.</td>
+            <td>Chili</td>
+            <td>4</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768668869562-963105b9-0046-409e-97f4-79ebec432889.jpeg" class="species-img"></td>
+            <td><i>Murraya koenigii</i></td>
+            <td>Curry leaves tree (daun kari)</td>
+            <td>2</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768667544257-72d1efda-29e0-41eb-9b41-e3cb1f57599d.png" class="species-img"></td>
+            <td><i>Sansevieria trifasciata</i></td>
+            <td>Snake plant (lidah jin)</td>
+            <td>6</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768667139873-433f9158-e56c-484e-b286-f6561e23b900.jpeg" class="species-img"></td>
+            <td><i>Bambusa</i> spp.</td>
+            <td>Bamboo (buluh)</td>
+            <td>4</td>
+        </tr>
+    </table>
+</div>
+
+
+<!-- HOUSE 11 --> 
+<div class="house" id="house11"> 
+    <h2>House 11</h2> 
+
+    <table>
+        <tr>
+            <th>Species Photo</th>
+            <th>Scientific Name</th>
+            <th>Common Name</th>
+            <th>No. of Individuals</th>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768635116834-9f3da693-1daf-4f8d-a9ac-25f65f955df4.jpg" class="species-img"></td>
+            <td><i>Cocos nucifera</i></td>
+            <td>Coconut tree (kelapa)</td>
+            <td>7</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768640804272-8e2fba65-7216-4123-86e1-cd1fcbe30026.png" class="species-img"></td>
+            <td><i>Allamanda cathartica</i></td>
+            <td>Golden trumpet</td>
+            <td>3</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768499062354-0b5edff5-adb0-4c5d-8e3e-ac5dcb72f10e.jpg" class="species-img"></td>
+            <td><i>Ixora coccinea</i></td>
+            <td>Scarlett Jungleflame</td>
+            <td>13</td>
+        </tr>
+    </table>
+</div>
+
+
+<!-- HOUSE 12 --> 
+<div class="house" id="house12"> 
+    <h2>House 12</h2> 
+
+    <table>
+        <tr>
+            <th>Species Photo</th>
+            <th>Scientific Name</th>
+            <th>Common Name</th>
+            <th>No. of Individuals</th>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768661361483-8b616381-16f0-411a-8be9-3d823fe4bcb3.png" class="species-img"></td>
+            <td><i>Capsicum spp.</i></td>
+            <td>Chili</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768665887297-2502ca94-d9e4-4d2e-86db-dbfe8480ac1c.webp" class="species-img"></td>
+            <td><i>Averrhoa bilimbi</i></td>
+            <td>Bilimbi (Belimbing buluh)</td>
+            <td>2</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768664509343-79a37c60-52ae-4d2f-8e43-3211a2d4deab.jpg" class="species-img"></td>
+            <td><i>Arachnis flos-aeris</i></td>
+            <td>Scorpion orchid</td>
+            <td>10</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768667544257-72d1efda-29e0-41eb-9b41-e3cb1f57599d.png" class="species-img"></td>
+            <td><i>Sansevieria trifasciata</i></td>
+            <td>Snake plant (Lidah jin)</td>
+            <td>25</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768667992103-3ccfb24f-6c1e-4ffd-8e61-c91aa0309891.jpeg" class="species-img"></td>
+            <td><i>Adenium obesum</i></td>
+            <td>Desert rose</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768663519385-02b738be-425d-4e20-92b2-074d6279a5c7.jpg" class="species-img"></td>
+            <td><i>Caladium bicolor</i></td>
+            <td>White caladium (Keladi putih)</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768668366145-e2df7f78-b667-488e-9a7e-4c0210ea2da0.webp" class="species-img"></td>
+            <td><i>Codiaeum variegatum</i></td>
+            <td>Pokok puding hitam</td>
+            <td>2</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768666999646-6c47ade6-69ae-4f91-92af-bb5d40dec8f6.png" class="species-img"></td>
+            <td><i>Mussaenda phillioica 'Queen Sirikit'</i></td>
+            <td>Pokok janda kaya merah muda</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768666834731-4353682e-460a-47c9-b307-19098da01468.jpg" class="species-img"></td>
+            <td><i>Plumeria rubra</i></td>
+            <td>Pokok kemboja</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768663593152-9ebf082d-6fd5-415a-808b-d2818d7093fc.jpg" class="species-img"></td>
+            <td><i>Caladium bicolor</i></td>
+            <td>Heart of Jesus</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768660485657-3050db8b-489b-48f8-9110-d9529c650f9e.png" class="species-img"></td>
+            <td><i>Allamanda blanchetii</i></td>
+            <td>Purple allamanda</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768660184870-b4006d1b-18ab-480f-8ed6-a46f613f8e48.jpg" class="species-img"></td>
+            <td><i>Allamanda cathartica</i></td>
+            <td>Allamanda biscuit</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768668478584-fbb09c4a-b071-4786-88d5-9c4c94492c1f.jpeg" class="species-img"></td>
+            <td><i>Bougainvillea spp.</i></td>
+            <td>Bunga kertas</td>
+            <td>23</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768666782793-a4442472-8a86-48fe-aa94-16ccad221c37.webp" class="species-img"></td>
+            <td><i>Aloe barbadensis miller</i></td>
+            <td>Aloe vera</td>
+            <td>2</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768668667853-176617d4-75bc-4a77-93d8-1bdf736b9441.jpg" class="species-img"></td>
+            <td><i>Arundina graminifolia</i></td>
+            <td>Bamboo orchid</td>
+            <td>8</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768666512889-5c9916f2-e10e-4c10-bde1-8c458d193676.jpg" class="species-img"></td>
+            <td><i>Dracaena spp.</i></td>
+            <td>Dragon tree</td>
+            <td>5</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768640804272-8e2fba65-7216-4123-86e1-cd1fcbe30026.png" class="species-img"></td>
+            <td><i>Allamanda cathartica</i></td>
+            <td>Golden trumpet</td>
+            <td>7</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768664701066-1ff85b33-5dc5-40c7-b5a9-9ee9de0dbf73.jpg" class="species-img"></td>
+            <td><i>Aglaonema spp.</i></td>
+            <td>Keladi</td>
+            <td>4</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768666374499-9063cd24-cc0f-478e-9d9c-dad99cf449cb.jpg" class="species-img"></td>
+            <td><i>Oxalis triangularis</i></td>
+            <td>Purple shamrock</td>
+            <td>18</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768666135904-809fb23b-b1c0-4144-8a83-e6c21bc0f70b.jpg" class="species-img"></td>
+            <td><i>Codiaeum variegatum</i></td>
+            <td>Garden croton (Pokok puding)</td>
+            <td>8</td>
+        </tr>
+    </table>
+</div>
+
+
+<!-- HOUSE 13 --> 
+<div class="house" id="house13"> 
+    <h2>House 13</h2> 
+
+    <table>
+        <tr>
+            <th>Species Photo</th>
+            <th>Scientific Name</th>
+            <th>Common Name</th>
+            <th>No. of Individuals</th>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768665936279-b8d5d428-12f8-4ae3-a53f-ec43e20c460a.jpg" class="species-img"></td>
+            <td><i>Anthurium andraeanum</i></td>
+            <td>Flamingo lily (Painter's-palette)</td>
+            <td>3</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768665716056-73263d3f-d0da-425d-8cd2-2638cd467f8a.jpg" class="species-img"></td>
+            <td><i>Hippeastrum reticulatum</i></td>
+            <td>Netted-Veined Amaryllis</td>
+            <td>5</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768664014814-73f10f9f-e34a-449c-97e1-ce6cab3d801b.webp" class="species-img"></td>
+            <td><i>Caladium bicolor</i></td>
+            <td>Heart of Jesus</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768661361483-8b616381-16f0-411a-8be9-3d823fe4bcb3.png" class="species-img"></td>
+            <td><i>Capsicum spp.</i></td>
+            <td>Chili</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://image2url.com/r2/default/images/1768665373198-288d1506-24ba-44e7-b2e7-a35a4de2fd11.webp" class="species-img"></td>
+            <td><i>Cymbopogon citratus</i></td>
+            <td>Lemongrass (Serai)</td>
+            <td>1</td>
+        </tr>
+
+    </table>
+</div>
+
+
+
+<!-- FIELD TRIP PHOTOGRAPH -->
+<div class="media" id="photo">
+    <h2>📸 Field Trip Photograph</h2>
+    <div class="media-box">
+        <div class="photo-grid">
+            <img src="https://image2url.com/r2/default/images/1768678452094-0e498d28-365e-47ec-be85-a12be77addfd.jpg">
+            <img src="https://image2url.com/r2/default/images/1768678526170-fa7aef43-fa94-49f5-b67e-1da979a1edf0.jpg">
+            <img src="https://image2url.com/r2/default/images/1768678592242-8ac5bda0-bce4-4440-b3e2-8abd8bb0a7b1.jpg">
+            <img src="https://image2url.com/r2/default/images/1768678625493-f402fc9c-db19-437b-b84e-7b1004e175f0.jpg">
+            <img src="https://image2url.com/r2/default/images/1768678645737-b194f3e6-823c-4976-b0a4-e923b23233f3.jpg">
+            <img src="https://image2url.com/r2/default/images/1768500145602-0b9f6799-5601-4a19-aac8-5a12a7186503.jpg">
+        </div>
+    </div>
+</div>
+
+<!-- FANCY SMALLER VIDEO SECTION (HALF SIZE) -->
+<div class="media" id="video">
+  <h2 style="color: var(--dark); text-align: center; margin-bottom: 20px;">🎥 Field Trip Highlights</h2>
+  
+  <!-- Captions -->
+  <div style="background: linear-gradient(90deg, #5f8f7b, #3f7667); color: white; padding: 15px 25px; border-radius: 15px; margin-bottom: 20px; text-align: center; box-shadow: 0 8px 25px rgba(95,143,123,0.4);">
+    <p style="font-size: 16px; margin: 0; font-weight: bold;">📹 Watch our Lenggong field trip on YouTube Shorts!</p>
+    <p style="font-size: 14px; margin: 5px 0 0; opacity: 0.95;">Complete plant biodiversity tour from 13 houses</p>
+  </div>
+  
+  <!-- HALF SIZE VIDEO (max 280px) -->
+  <div class="video-container" style="position: relative; max-width: 280px; margin: 0 auto; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.2); background: #f8fafc; padding: 12px;">
+    
+    <video controls width="100%" preload="metadata"
+           style="display: block; border-radius: 12px; transition: all 0.3s ease;"
+           poster="https://via.placeholder.com/280x158/5f8f7b/e7f2ec?text=Lenggong">
+      <source src="https://raw.githubusercontent.com/WWW-economic-botany/Fieldtrip-to-Lenggong/main/trip%20video.mp4" type="video/mp4">
+    </video>
+    
+  </div>
+  
+  <!-- YouTube Button -->
+  <!-- AESTHETIC YOUTUBE BUTTON -->
+<div style="text-align: center; margin-top: 25px;">
+  <a href="https://youtube.com/shorts/6LHon_V1Gkw?feature=share" 
+     target="_blank" 
+     class="watch-full"
+     style="
+       background: linear-gradient(145deg, #ff6b6b, #ee5a52, #ff5252);
+       padding: 16px 40px; 
+       font-size: 16px; 
+       font-weight: 600;
+       color: white !important;
+       text-decoration: none;
+       border-radius: 50px;
+       box-shadow: 
+         0 12px 30px rgba(255,107,107,0.45),
+         0 4px 15px rgba(255,255,255,0.2) inset,
+         0 2px 5px rgba(0,0,0,0.1);
+       display: inline-block;
+       position: relative;
+       overflow: hidden;
+       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+       border: 2px solid rgba(255,255,255,0.3);
+     "
+     onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 18px 40px rgba(255,107,107,0.5), 0 6px 20px rgba(255,255,255,0.3) inset';"
+     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 12px 30px rgba(255,107,107,0.45), 0 4px 15px rgba(255,255,255,0.2) inset, 0 2px 5px rgba(0,0,0,0.1)';">
+    <span style="position: relative; z-index: 2;">🎥 Watch on YouTube Shorts</span>
+  </a>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</body>
+</html>
